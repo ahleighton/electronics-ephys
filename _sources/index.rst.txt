@@ -17,7 +17,7 @@ A particle is charged if it can exert an electric force on another charged parti
 
     <center><b>Equation 1: F = electric force, k = Coulomb constant, q1 + q2 = charges, r = distance of separation.</b></center>
 
-.. figure:: ../static/images/coulombs_law_visual.png
+.. figure:: /static/images/coulombs_law_visual.png
 
   **The magnitude of electric force between charges depends on their charge and the distance between them.**
 
@@ -26,7 +26,7 @@ We often represent electric force using electric field lines, such as those radi
 
 Electric field lines show the direction of the force on a positive charge. Colour intensity represents electric potential.
 
-.. figure:: ../static/images/electric_field_lines.png
+.. figure:: /static/images/electric_field_lines.png
 
   **Electric field lines show the direction of the force on a positive charge. Colour intensity represents electric potential.**
 
@@ -49,7 +49,7 @@ Electric Potential Difference
 
 The figure below shows a negative and positive charge that are held in a certain position in space. These large charges are not allowed to move (they have a large mechanical force restraining them), but they still exert an attracting force on each other. If we let them, they would move towards each other. If we were to place our test charge anywhere in this space, it would experience a net electric force; some influence from the + charge, some influence from the negative charge. The vector description of the magnitude and direction of that force is the electric field, and is shown as field lines below.
 
-.. figure:: ../static/images/electric_potential.png
+.. figure:: /static/images/electric_potential.png
 
   A large positive charge and a smaller negative charge held in space, with electric field lines indicating electric force and direction and electric potential represented in colour.
 
@@ -129,7 +129,7 @@ Alternating Current (AC) and Direct Current (DC) are used to describe two differ
 
 AC means that the voltage supply is changing polarity, and that the charge carriers are actually flowing back and forth, alternating current direction at a specific frequency. Energy is provided by there being current flow, independent of the direction.
 
-.. figure:: ../static/images/AC_DC.png
+.. figure:: /static/images/AC_DC.png
 
   Left; A DC voltage source in a circuit is represented by one short and one longer line, and outputs a steady voltage. Right: an alternating voltage source is represented by a sine wave inside a circle, and outputs a signal that alternates between voltages, such that the direction of current changes.
 
@@ -177,7 +177,7 @@ The relative impedances of circuit components, determines the voltage at each po
 In a circuit powered by a 9V battery, all 9V of potential from the positive terminal of the battery must be converted to different forms of energy (such as heat or light) in order to return to 0V at the negative terminal of the battery. If there is a single resistor in the circuit, all 9 V will drop ‘over’ that resistor. If there are multiple components in the circuit, the voltage dropped over each component will follow the ratio of their impedances, always resulting in 9V in total.
 In each circuit below, the current through R1 must equal the current through R2, as there is nowhere else for the charges to go. The total voltage drop over the circuit must equal the total provided voltage. Following Ohm’s law, and given that they experience the same current, a higher resistor will have a higher voltage drop (V=IR).
 
-.. figure:: ../static/images/voltage_divider.png
+.. figure:: /static/images/voltage_divider.png
 
 
 
@@ -205,7 +205,7 @@ Analog filters can be built out of basic electronic components. To build a filte
 
 Because the impedance of a capacitor is frequency-dependent, they are ideal candidates for analog filters. The second crucial element is a voltage divider to ground.
 
-.. figure:: ../static/images/analog_filter.png
+.. figure:: /static/images/analog_filter.png
 
 
 At unwanted frequencies, the filter must provide very low impedance Z2 to ground, so that almost all the voltage is lost over Z1 and the amplitude at Vfiltered is very low. At desired frequencies, Z2 must be very high impedance, so that it requires a high voltage drop and a corresponding high amplitude at Vfiltered.
@@ -215,7 +215,7 @@ At unwanted frequencies, the filter must provide very low impedance Z2 to ground
 High-pass RC filter
 ---------------------------------------------------------------
 
-.. figure:: ../static/images/analog_filter_high.png
+.. figure:: /static/images/analog_filter_high.png
 
 
 Capacitors provide high impedance to low frequencies. At low frequencies, this voltage divider will therefore have a high Z1 and a relatively low Z2, so most voltage will be lost before the signal reaches Vfiltered. If the frequency is high, Z1 will be low and most of the voltage amplitude will be maintained at Vfiltered.
@@ -223,7 +223,7 @@ Capacitors provide high impedance to low frequencies. At low frequencies, this v
 Low-pass RC filter
 ---------------------------------------------------------------
 
-.. figure:: ../static/images/analog_filter_low.png
+.. figure:: /static/images/analog_filter_low.png
 
 
 Capacitors provide high impedance to low frequencies. At low frequencies, this voltage divider will therefore have a low Z1 and a relatively high Z2. Most of the signal amplitude will be maintained at Vfiltered. If the frequency is high, Z1 will be high and the signal amplitude will be attenuated at Vfiltered.
@@ -233,7 +233,7 @@ Why does the impedance of a capacitor vary with frequency?
 The higher the frequency of the signal, the faster the capacitor will switch between charging and discharging. Initial (dis)charging happens very quickly, and the rate of (dis)charging of a capacitor slows exponentially with time (in a simple battery-powered circuit). Therefore, the quicker the change between charging and discharging, the more current will flow in the circuit; the capacitor provides low impedance.
 
 
-.. figure:: ../static/images/charging_discharging_cap.png
+.. figure:: /static/images/charging_discharging_cap.png
 
 
 At slow frequencies, the plates will be able to separate more charge before the switch in polarity occurs. The driving force of the accumulated charge on the plate will work against the driving voltage and slow down the current; the capacitor charging rate will move into the slower tail of the curve with reduced current and subsequently higher impedance.
@@ -259,7 +259,7 @@ We can do that by sending signals where 0 is represented by 0V, and 1 is represe
 This system requires that the sender can convert analog to digital values (analog to digital converters are often abbreviated to ADCs) and it requires an agreement between the sender and receiver in terms of content such as the duration of each pulse and the number of bits in a binary word.
 
 
-.. figure:: ../static/images/analog_digital.png
+.. figure:: /static/images/analog_digital.png
 
 
 Dealing with Noise
@@ -270,7 +270,7 @@ At first glance, analog signals may seem superior, as our goal is to get a preci
 If a cable transmitting analog data encounters noise (e.g. 50 hz), this noise is added directly to the signal, and will appear in the final output of the system. If the same happens to a cable transmitting a digital signal, noise will still be added to the voltage. However, because the receiver can only encode whether the voltage was ‘high’ or ‘low’, the noise gets abstracted out and the signal is read as clearly as if there had not been noise on the cable.
 
 
-.. figure:: ../static/images/analog_digital_noise.png
+.. figure:: /static/images/analog_digital_noise.png
 
 
 Electronics in the brain
@@ -342,7 +342,7 @@ When we perform extracellular recordings, we are measuring the electric potentia
 
 Extracellular action potential waveforms usually last on the order of 1-2 ms, and are in the range of tens to hundreds of microvolts in amplitude, with the largest potential deflections being detected close to the soma of a neuron. These stereotypical temporal deflections of the electric potential in the extracellular space are called action potentials or spikes. Fig 5 depicts the (modelled) time-varying extracellular potential measured at 3 different locations close to a neuron. Each extracellular waveform results from the superposition of ionic and capacitive transmembrane currents. The peaks in the potential waveforms correspond to the current (right column) that is dominant at that time-point: the first positive peak of the waveform is attributed to the positive capacitive current resulting from the strong Na+ current entering the axon initial segment; the main negative peak is attributed to the influx of Na+; and finally, the second positive peak results from repolarising K+ current flowing out of the cell (Gold et al., 2006). As the effect of a current decreases with distance, the relative position of the electrode determines the relative contribution of each current and therefore the net overall current shape (left column). For instance, if the electrode is close to the axon initial segment (where many voltage-dependent Na+ channels are), the Na+ current will be larger.
 
-.. figure:: ../static/images/electric_potential_spike.png
+.. figure:: /static/images/electric_potential_spike.png
 
     **Electric potential generated by current sources in a conductive volume. The extracellular potentials and currents are adapted from Gold et al., 2006. The shape of the extracellular potential waveforms at various spatial positions 're' (marked with black dots) are simulated for a CA1 pyramidal neuron. Currents: simulated net membrane current (first column) across the soma and proximal dendrites that best estimates the extracellular potential waveform and membrane current components in terms of Na+, K+ and capacitive currents (second column). In the soma, the positive capacitive current coincides with the larger Na+ current. At locations along the apical trunk, the initial capacitive peak becomes visible. In dendritic compartments the membrane depolarisation is initially driven by Na+ current from the soma, until local Na+ currents are activated and the action potential regenerates. In the brief time before the local Na+ currents activate, the positive capacitive current is the dominant membrane current and a capacitive-dominant phase is visible in the net current (Gold et al., 2006, adapted by Joana Neto).**
 
@@ -356,7 +356,7 @@ There are several things that any extracellular acquisition system has to be abl
 Extracellular electrophysiology techniques all share the same goal: to measure activity occurring in biological tissue. They do that by detecting changes in electric potential due to cellular activity, compared to a reference or ground point, and by faithfully shuttling these signals to an output where the experimenter can view or record them. In most cases this output will be a computer to visualise and store data.
 The signal at the electrode is measured in volts (V) and is very small, in the microvolt range. This is tiny compared to the voltages we encounter elsewhere in the lab: for instance, a battery is around 3V, and the building main power supply 120 or 230V. The lab (and the world) is also an electrically noisy place, which you will know if you have done any electrophysiology before. Electrical equipment, communications devices, but also just walking around (generating static electricity) creates electric potential differences many orders of magnitude larger than the biological signal you are trying to measure. The acquisition system needs to be designed so that it can detect tiny signals even in the face of surrounding noise signals generated by other sources.
 
-.. figure:: ../static/images/black_box_recording_system.png
+.. figure:: /static/images/black_box_recording_system.png
 
     **The voltage at the electrode tip (Vec), the voltage after the electrode (Vin) and the voltage we read out (Vout).**
 
@@ -375,13 +375,13 @@ Getting from neuronal activity (Vec) to the input to the recording system (Vin) 
 
 The transition from ion flow in the extracellular space (due to neural activity) to electron flow in the electrode is made through the double layer interface. When a metal is placed in a saline solution two phenomena occur: water dipoles close to the metal surface become oriented so that the positive hydrogens face towards the metal surface, and the solution close to the metal become depleted of negative ions (anions), leaving behind a cloud of positive ions (cations). This cloud of cations screens the electric field caused by the excess of charge on the metal. Electroneutrality across the interface requires that the charge on the metal is always equal and opposite to the total charge on the solution side of the interface (Musa et al., 2012). The resulting charge distribution - two narrow regions of equal and opposite charge - is known as the electrical double layer (EDL). The double layer region (represented in pink in the schematics) has the ability to separate charges on both sides, and therefore a capacitance ‘Ce’. The double layer also opposes the direct flow of current across it, and therefore has a resistance ‘Re’.
 
-.. figure:: ../static/images/double_layer_interface.png
+.. figure:: /static/images/double_layer_interface.png
   **The double layer interface creates a resistance and capacitance between an electrode and the extracellular fluid.**
 
 We can describe the electrical behaviour of electrodes by making an ‘equivalent circuit’, getting rid of the specific shape or material and just representing the electrical properties of the double layer interface:
 
 
-.. figure:: ../static/images/circuit_double_layer_interface.png
+.. figure:: /static/images/circuit_double_layer_interface.png
   **The equivalent circuit describes the electrical properties of the double-layer interface between electrode and extracellular fluid.**
 
 
@@ -420,15 +420,15 @@ Why is impedance important?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The figure below includes the equivalent circuit of the electrode, as discussed above. The signal at Vec must travel through the electrode, to Vin, the voltage before the acquisition system itself. From there, currents coming from our neurons travel to ground. They can do so either by passing through our acquisition system, or, in parallel, they can be lost to ground through shunt impedance. Shunt impedance is primarily capacitive (see section below) and represented as Cs. Shunt capacitances are created by cables or the sides of electrodes; they are ‘accidental’ but unavoidable capacitances in the system.
 
-.. figure:: ../static/images/circuit_electrode_shunt_capacitance.png
+.. figure:: /static/images/circuit_electrode_shunt_capacitance.png
 
 We can replace these components with a representation of the impedance (Z) they provide.
 
-.. figure:: ../static/images/circuit_impedance_shunt_capacitance.png
+.. figure:: /static/images/circuit_impedance_shunt_capacitance.png
 
 The impedance of the shunt capacitance, Zcs and the impedance of the acquisition system Za are impedances in parallel. We can simplify our circuit by combining their impedances and calling it Za’.
 
-.. figure:: ../static/images/shunt_amplifier_voltage_divider.png
+.. figure:: /static/images/shunt_amplifier_voltage_divider.png
 
 This gives us a voltage divider, similar to the one we built before, where:
 
@@ -449,7 +449,7 @@ Reducing Electrode Impedance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The impedance of an electrode is a measure of its ability to resist the flow of charge across the electrode-solution interface (i.e., across the electronic conductor (metal) and ionic conductor (extracellular fluid)). It is the impedance of the whole electrode equivalent circuit, consisting of the resistance of the electrode metal (Rm) and the resistance (Re) and capacitance (Ce) of the double layer at the electrode-solution interface.
 
-.. figure:: ../static/images/circuit_double_layer_interface.png
+.. figure:: /static/images/circuit_double_layer_interface.png
 
   **The equivalent circuit describes the electrical properties of the double-layer interface between electrode and extracellular fluid.**
 
@@ -469,7 +469,7 @@ As discussed above, the impedance of a capacitor decreases with increased capaci
 
 To make C bigger, we can increase the surface area (A) of the electrode, for instance by electroplating a thin layer of gold onto an electrode.
 
-.. figure:: ../static/images/gold_plating.png
+.. figure:: /static/images/gold_plating.png
 
 
 We can also coat electrodes with materials complemented with pseudo-capacitance, such as conducting polymers or transition metal oxide films, such as IrOx (Green, Lovell, Wallace, & Poole-Warren, 2008; Musa, 2011). Electrode impedance magnitude is usually measured at 1 kHz before and after electrode coating, demonstrating an impedance decrease of up to 10-fold upon gold-plating (Neto et al., 2018). By increasing the capacitance (Ce) of our electrode, the electrode impedance (Ze) will be smaller, preserving more of our signal amplitude at Vin.
@@ -496,7 +496,7 @@ The operational amplifier
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The operational amplifier is the most simple amplifier circuit and is represented as a triangle (see image below). The operational amplifier has two inputs (V+ and V-), one output (Vout), and two power rails at different potentials (e.g. a +3 and -3V power rail). The output of the amplifier is driven by these power rails, which means it can output a higher voltage than it receives.
 
-.. figure:: ../static/images/op-amp-basic.png
+.. figure:: /static/images/op-amp-basic.png
 
 Amplifiers output a voltage
 ---------------------------------------------------
@@ -535,7 +535,7 @@ A perfect 5V voltage source would always provide exactly 5 Volts, no matter what
 
 A real voltage source has a bit of output impedance, which means it acts as a voltage source in series with an impedance. This is modelled here:
 
-.. figure:: ../static/images/output_impedance.png
+.. figure:: /static/images/output_impedance.png
 
 
 That invisible, small series resistance creates a voltage divider. Though the actual source voltage is the same 5V, the apparent voltage of the source now varies depending on the ratio between the output impedance of the source, and the impedance of the rest of the circuit. The lower the impedance of the components used in the rest of the circuit, the higher the relative influence of the source output impedance, and the lower the apparent source voltage (the voltage ‘droops’).
@@ -564,12 +564,12 @@ To be able to attach both a measurement and reference electrode to our headstage
 
 The instrumentation amplifier circuit uses three operational amplifiers to compare the signal from a measurement and a reference electrode, and output the difference between the two. We described above that operational amplifiers can be both buffers (they protect the incoming signal by having high input impedance) and comparators (when they output the difference between two signals). The instrumentation amplifier puts both these behaviours to use to first buffer the measurement and reference signal, then output the difference between the two.
 
-.. figure:: ../static/images/instr_amp_step_1.png
+.. figure:: /static/images/instr_amp_step_1.png
 
 In the above instrumentation amplifier circuit, the reference and the measurement electrode are each connected to a different op-amp, with the output of the amplifier connected to its inverting '-' terminal. This will cause the operational amplifier to output the same voltage it is receiving, to make the '-' terminal match the input at the '+' terminal. A voltage divider to ground divides the output voltage in half. At that point in the circuit, the difference between the two circuits (798.5 and 848.5 mV) is 50mV.
 
 
-.. figure:: ../static/images/instr_amp_add_amp.png
+.. figure:: /static/images/instr_amp_add_amp.png
 
 If we add a final op-amp in between these points, the '-' terminal receives 798.5 mV and the '+' terminal receives 848.5 mV. The amplifier will output the signal required to bring the '-' inverting terminal to the '+' noninverting terminal value, so that V3 equals V4. I.e., it will output the voltage required to provide an extra 50mV at V3. The voltage divider will also halve the output of the amplifier, so it must output 100mV in order to achieve a 50mV increase at V3. This circuit will therefore output the difference between the inputs; the 100mV spike. The noise signal that was shared by both inputs doesn't need to be compensated for by the final amplifier, so will not appear in the output.
 
@@ -585,7 +585,7 @@ Gain resistor
 The value with which the signal is amplified by the instrumentation amp (the gain) is set by the gain resistor. Adding a gain resistor to the circuit allows a current to flow between V1 and V2. Current flows over resistors result in a voltage drop, following Ohm's law.
 The voltages 'Buffered Vref' and 'Buffered Vmeasure' on either side of the gain resistor are fixed, because the op-amps are keeping them in place. To maintain this buffering role, the two amplifiers will now have to output a higher voltage to compensate for the voltage lost over the 10k resistors. The final op-amp will receive input voltages with a larger difference between them, and will output this larger, i.e. amplified, difference. Click figure below to see this in the simulator.
 
-.. figure:: ../static/images/instr_amp_gain.png
+.. figure:: /static/images/instr_amp_gain.png
   :target: https://tinyurl.com/yjxekrv5
   :alt: two operational amplifiers with negative feedback receive the measurement and reference electrode, respectively. Their outputs are fed into a third operation amplifier with negative feedback to form an instrumentation amplifier.
 
@@ -643,7 +643,7 @@ Why do we need instrumentation amps?
 ---------------------------------------------------
 Why can’t we just use 1 operational amplifier to get a nice signal?
 
-.. figure:: ../static/images/op_amp_spikes_ref.png
+.. figure:: /static/images/op_amp_spikes_ref.png
 
 To make this circuit differential, we need voltage dividers. But these are connecting our fragile signal to ground! Plus, any mismatch in the input impedances between ‘+’ and ‘-’ messes up the signal if there is a lot of common mode noise. In practical terms, there is always going to be a mismatch between these resistors, they simply cannot be produced in a way that makes them exactly equal.
 Why? Because this resistor is also your electrode. If you work with electrodes, have you measured their impedances? How similar are they? If you made these resistors as different as your electrodes are variable, this circuit will not work to eliminate common mode noise and amplify our spikes.
@@ -654,7 +654,7 @@ When we build our EMG circuit, we will use three electrodes: measurement (+), re
 
 Imagine you just walked across a carpet and you’re charged to 10kV. Now you want to do a differential measurement of EMG (or EEG). In theory, as far as we’ve really talked about until now, this should work via the magic of common-mode rejection.
 
-.. figure:: ../static/images/instrumentation_amp_simulator.png
+.. figure:: /static/images/instrumentation_amp_simulator.png
 
 However, the job of the first two amplifiers is to buffer the input from the electrode, i.e. to replicate the incoming signal but now powered by the amplifier instead of the electrode. Each op-amp can only go as high or low as its voltage rails. If you are charged to 10kV compared to ground, we’re asking these op-amps to replicate this 10kV+ voltage, when they only have 15V available. They will therefore saturate. Even if the whole system is floating, there is still a point somewhere in the circuit labelled 0V. Any large differences between measured potentials and this 0V will saturate the amplifiers.
 
@@ -670,12 +670,12 @@ Low and High pass filtering
 
 As described above, filters are used to remove certain frequencies from our data. We can do this in hardware using, for instance, the RC circuits previously described. We can also do this in software. Hardware filtering, implemented in the amplifier circuit, is used to increase the apparent signal to noise ratio by rejecting unwanted frequencies and to prevent signal aliasing (e.g., bandpass between 0.5 and 2 kHz). Even with a differential amplifier, we usually have a decent amount of slow (~<10Hz or so) voltages that are simply too big for the amplifier or ADC (analog to digital converter). Any voltages above or below the amplifier rails (or above/below the input range of the digitizer) will be ‘clipped’ and all we’ll see is a constant value. The solution is to remove the large amplitude slow components, so we can fit the lower amplitude, faster, interesting components into our dynamic range.
 
-.. figure:: ../static/images/ADC_saturation.png
+.. figure:: /static/images/ADC_saturation.png
 
 High-pass filters on the headstage therefore first remove the large DC offsets present at the electrode-extracellular interface, along with any undesired low-frequency signals (e.g., movement artefacts).
 Low-pass filters must be configured to less than half of the ADC frequency sampling rate (Nyquist limit) to prevent aliasing, and may also be used to block undesired high-frequency signals and artefacts. For instance, if our sampling frequency is 30 kHz, the low pass filter should be ~15 kHz. Below is an example of the Intan headstage circuit.
 
-.. figure:: ../static/images/inside_intan.png
+.. figure:: /static/images/inside_intan.png
 
 
 
@@ -687,19 +687,19 @@ The purpose of digitization is to convert amplified signals into digital values.
 
 The resolution of the digital signal is measured in bits, inidicating the number of different values that the digital signal can have. A 1-bit signal has 2 values (high and low), whereas a 2-bit signal has 4 levels and a 3-bit signal has 8. The digitizer will output discrete values that approximate the analog input signal. The more bits that can be used, the better the approximation of the analog signal will be.
 
-.. figure:: ../static/images/resolution.png
+.. figure:: /static/images/resolution.png
 
 The output of the amplifier (Vout) is the input of the digitizer. This voltage range should match the digitizer 'dynamic range', i.e. the analog signal should occupy most of the values that the digitizer can process. If the dynamic range is too small compared to the input, the signal will saturate, and if it is too large it will decrease effective signal resolution.
 
 
-.. figure:: ../static/images/digitization_range.png
+.. figure:: /static/images/digitization_range.png
 
 
 If you have a voltage divider and an open-loop op-amp (comparator) you can already build a circuit that checks if your analog signal is above or below a certain value. Now instead of one voltage divider, you could have a whole ‘ladder’, creating intermediate values, and compare to these. This is an incredibly inefficient way to make an ADC.
 
 Here’s what this may look like (click to open simulator):
 
-.. figure:: ../static/images/comparator_ladder.png
+.. figure:: /static/images/comparator_ladder.png
     :target: https://tinyurl.com/yadu834g
 
 
