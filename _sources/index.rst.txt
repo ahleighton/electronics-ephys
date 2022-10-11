@@ -2,6 +2,9 @@
 Electronics for Extracellular Electrophysiology
 """"""""""""""""""""""""""""""""""""""""""""""""
 
+.. contents:: Table of Contents
+  :depth: 4
+
 Electronics
 ####################################################
 
